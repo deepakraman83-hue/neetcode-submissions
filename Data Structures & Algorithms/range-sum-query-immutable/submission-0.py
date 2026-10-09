@@ -1,3 +1,6 @@
+'''
+ LeetCode 303 Range Sum Query - Immutable. 
+'''
 class NumArray:
   def __init__(self, nums: list[int]):
      self.prefix_nums=[0]*len(nums)
