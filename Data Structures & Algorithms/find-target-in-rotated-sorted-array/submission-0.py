@@ -5,8 +5,8 @@ class Solution:
             mid=(right+left)//2
             if nums[mid]==target:
                 return mid
-            if nums[left]<=nums[mid]:
-                if nums[left]<=target<nums[mid]:
+            if nums[left]<=nums[mid]: #left array is sorted else right is sorted
+                if nums[left]<=target<nums[mid]: # if target is in the range bring far into this else move to other side
                     right=mid-1
                 else:
                     left=mid+1
